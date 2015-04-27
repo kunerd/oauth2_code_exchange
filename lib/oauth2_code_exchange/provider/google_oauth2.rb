@@ -18,8 +18,6 @@ module Oauth2CodeExchange
       end
 
       def validate_code(code)
-        return false if ( code.nil? || code.empty? )
-
         params = create_validate_code_params(code)
         content_type = {
           content_type: CONTENT_TYPE

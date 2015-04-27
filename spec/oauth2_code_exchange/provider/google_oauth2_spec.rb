@@ -20,12 +20,6 @@ describe Oauth2CodeExchange::Provider::GoogleOauth2 do
       end
     }
 
-    context 'with invalid code param' do
-      it 'should return false' do
-        expect(subject.validate_code(nil)).to be false
-      end
-    end
-
     it 'creates correct POST request' do
       expect(rest_client).to receive(:post).with(
         url, {

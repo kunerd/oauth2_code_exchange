@@ -28,18 +28,6 @@ module Oauth2CodeExchange
         google_oauth2[:client_secret] = 1
         expect(google_oauth2[:client_secret]).to eq 1
       end
-
     end
-    # describe ".provider" do
-    #   it "" do
-    #     expect(config.provider.google_oauth2.api_key).to eq('api_key')
-    #   end
-    #
-    #   it "can set value" do
-    #     config = Configuration.new
-    #     config.provider.google_oauth2.api_key = 'new_api_key'
-    #     expect(config.provider.google_oauth2.api_key).to eq('new_api_key')
-    #   end
-    # end
   end
 end
