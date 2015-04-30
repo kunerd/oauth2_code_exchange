@@ -1,6 +1,7 @@
 require "oauth2_code_exchange/version"
 require "oauth2_code_exchange/configuration"
 require "oauth2_code_exchange/context"
+require "oauth2_code_exchange/provider/factory"
 require "oauth2_code_exchange/provider/google_oauth2"
 require "oauth2_code_exchange/provider/facebook_oauth2"
 
